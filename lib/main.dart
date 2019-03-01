@@ -38,10 +38,24 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       drawer: ListView(children: <Widget>[
-        DrawerHeader(child: Text("Head", style: TextStyle(color: Colors.lime))),
-        ListTile(title: Text("First"),onTap: (){},),
-        ListTile(title: Text("Second"),onTap: (){},),
-        ListTile(title: Text("Third"),onTap: (){},),
+        DrawerHeader(decoration: BoxDecoration(color: Colors.black12),
+            child: Text("Head",
+                style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 30,
+                    fontStyle: FontStyle.normal))),
+        ListTile(
+          title: Text("First"),
+          onTap: () {},
+        ),
+        ListTile(
+          title: Text("Second"),
+          onTap: () {},
+        ),
+        ListTile(
+          title: Text("Third"),
+          onTap: () {},
+        ),
       ]),
       appBar: AppBar(
         leading: new IconButton(
